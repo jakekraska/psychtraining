@@ -1,0 +1,232 @@
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+
+\caption{\label{tab:ageParticipants}Participants by Age}
+\centering
+\begin{tabular}[t]{l|r|r}
+\hline
+Age & n & Percentage\\
+\hline
+18 - 24 & 5 & 1.47\\
+\hline
+25 - 34 & 121 & 35.59\\
+\hline
+35 - 44 & 105 & 30.88\\
+\hline
+45 - 54 & 65 & 19.12\\
+\hline
+55 - 64 & 37 & 10.88\\
+\hline
+65 - 74 & 7 & 2.06\\
+\hline
+\end{tabular}
+\end{table*}
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+
+\caption{\label{tab:aopeParticipants}Participants by AoPE}
+\centering
+\begin{tabular}[t]{l|r|r}
+\hline
+Area of Practice Endorsement & n & Percentage\\
+\hline
+Clinical & 25 & 7.35\\
+\hline
+Clinical,Health & 1 & 0.29\\
+\hline
+Clinical,Organisational & 1 & 0.29\\
+\hline
+Community & 1 & 0.29\\
+\hline
+Counselling & 9 & 2.65\\
+\hline
+Ed\&Dev & 24 & 7.06\\
+\hline
+Ed\&Dev,Counselling & 1 & 0.29\\
+\hline
+Forensic & 1 & 0.29\\
+\hline
+Health & 5 & 1.47\\
+\hline
+None & 249 & 73.24\\
+\hline
+Organisational & 4 & 1.18\\
+\hline
+S\&E & 4 & 1.18\\
+\hline
+NA & 15 & 4.41\\
+\hline
+\end{tabular}
+\end{table*}
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+
+\caption{\label{tab:trainingPathwayParticipants}Participants by Training Pathway}
+\centering
+\begin{tabular}[t]{l|r|r}
+\hline
+Training Pathway & n & Percentage\\
+\hline
+4+2 & 143 & 42.06\\
+\hline
+5+1 & 35 & 10.29\\
+\hline
+DPsych & 4 & 1.18\\
+\hline
+MPsych & 124 & 36.47\\
+\hline
+MPsych/PhD & 11 & 3.24\\
+\hline
+Ongoing & 22 & 6.47\\
+\hline
+NA & 1 & 0.29\\
+\hline
+\end{tabular}
+\end{table*}
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+
+\caption{\label{tab:yearsExperienceParticipants}Participants by Years of Experience}
+\centering
+\begin{tabular}[t]{l|r|r}
+\hline
+Years of Experience & n & Percentage\\
+\hline
+0-7 & 141 & 41.47\\
+\hline
+10-15 & 40 & 11.76\\
+\hline
+15-20 & 34 & 10.00\\
+\hline
+20+ & 41 & 12.06\\
+\hline
+8-10 & 34 & 10.00\\
+\hline
+Provisional & 50 & 14.71\\
+\hline
+\end{tabular}
+\end{table*}
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+
+\caption{\label{tab:workSettingParticipants}Participants by Work Setting}
+\centering
+\begin{tabular}[t]{l|r|r}
+\hline
+Work Setting & n & Percentage\\
+\hline
+Education (K-12) & 51 & 12.06\\
+\hline
+Education (Tertiary) & 22 & 5.20\\
+\hline
+Government & 82 & 19.39\\
+\hline
+Non-profit & 53 & 12.53\\
+\hline
+Private & 211 & 49.88\\
+\hline
+NA & 4 & 0.95\\
+\hline
+\end{tabular}
+\end{table*}
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+
+\caption{\label{tab:clientAgeParticipants}Participants by Client Age}
+\centering
+\begin{tabular}[t]{l|r|r}
+\hline
+Client Age & n & Percentage\\
+\hline
+0-3 & 58 & 5.12\\
+\hline
+12-18 & 240 & 21.20\\
+\hline
+18-25 & 259 & 22.88\\
+\hline
+25-65 & 252 & 22.26\\
+\hline
+4-11 & 165 & 14.58\\
+\hline
+65+ & 156 & 13.78\\
+\hline
+NA & 2 & 0.18\\
+\hline
+\end{tabular}
+\end{table*}
+\begin{table*}[hbt]
+\ifnextchar[{\eatarg}{}
+
+
+\caption{\label{tab:trainingDescriptives}Descriptive Statistics for Training Questions}
+\centering
+\begin{tabular}[t]{l|r|r|r|r|r|r|r}
+\hline
+  & Question & n & m & SD & Skew & Kurtosis & SE\\
+\hline
+Choosing a particular registration pathway was an easy decision for me & 1 & 319 & 3.41 & 1.34 & -0.40 & -1.15 & 0.08\\
+\hline
+It was easy to find a course relating to my area of practice interest & 2 & 319 & 2.99 & 1.43 & -0.03 & -1.41 & 0.08\\
+\hline
+Given the chance, I would have opted for another registration pathway & 3 & 316 & 3.04 & 1.47 & -0.09 & -1.45 & 0.08\\
+\hline
+I am considering undertaking an Area of Practice Endorsement bridging program course & 4 & 320 & 3.01 & 1.53 & -0.11 & -1.49 & 0.09\\
+\hline
+The length of my training has adequately prepared me for efficient practice & 5 & 319 & 3.97 & 1.18 & -1.00 & -0.07 & 0.07\\
+\hline
+I was provided with enough practical experience during my training & 6 & 320 & 3.89 & 1.33 & -0.96 & -0.41 & 0.07\\
+\hline
+I was provided with enough clinical supervision during my training & 7 & 319 & 4.11 & 1.23 & -1.31 & 0.50 & 0.07\\
+\hline
+My training equipped me with adequate knowledge of the discipline & 8 & 319 & 4.18 & 1.01 & -1.42 & 1.49 & 0.06\\
+\hline
+My training equipped me with adequate knowledge about ethical conduct & 9 & 317 & 4.54 & 0.76 & -2.31 & 6.64 & 0.04\\
+\hline
+My training equipped me with adequate knowledge about legal matters & 10 & 319 & 3.52 & 1.25 & -0.44 & -1.02 & 0.07\\
+\hline
+My training equipped me with adequate knowledge about professional matters & 11 & 318 & 3.98 & 1.06 & -0.98 & 0.31 & 0.06\\
+\hline
+My training adequately prepared me to conduct psychological assessments & 12 & 318 & 4.29 & 0.98 & -1.60 & 2.14 & 0.05\\
+\hline
+My training adequately prepared me to understand psychological assessment and measurement & 13 & 316 & 4.40 & 0.84 & -1.68 & 2.98 & 0.05\\
+\hline
+My training adequately prepared me to implement intervention strategies & 14 & 318 & 3.89 & 1.20 & -0.98 & -0.12 & 0.07\\
+\hline
+Because of my training I am confident conducting research & 15 & 315 & 3.79 & 1.09 & -0.65 & -0.47 & 0.06\\
+\hline
+Because of my training I am confident working with people from diverse groups and cultures & 16 & 318 & 3.97 & 1.06 & -0.93 & 0.13 & 0.06\\
+\hline
+My training prepared me to confidently work with clients of all ages & 17 & 318 & 3.56 & 1.26 & -0.51 & -0.96 & 0.07\\
+\hline
+My training helped refine my communication skills & 18 & 317 & 4.36 & 0.80 & -1.57 & 3.11 & 0.04\\
+\hline
+I am satisfied with the extent my training pathway prepared me for practice & 19 & 319 & 3.94 & 1.20 & -1.02 & -0.03 & 0.07\\
+\hline
+The 4+2 internship is a satisfactory professional training pathway to becoming a psychologist & 20 & 319 & 3.57 & 1.39 & -0.47 & -1.17 & 0.08\\
+\hline
+The 4+2 internship is a preferred professional training pathway to becoming a registered psychologist & 21 & 319 & 2.75 & 1.46 & 0.23 & -1.30 & 0.08\\
+\hline
+The 5+1 internship is a satisfactory professional training pathway to becoming a registered psychologist & 22 & 317 & 3.71 & 1.08 & -0.64 & -0.20 & 0.06\\
+\hline
+The 5+1 internship is a preferred professional training pathway to becoming a registered psychologist & 23 & 318 & 3.01 & 1.16 & -0.07 & -0.74 & 0.06\\
+\hline
+Higher Degree programs are a satisfactory professional training pathway to becoming a registered psychologist & 24 & 318 & 3.92 & 1.15 & -0.96 & 0.02 & 0.06\\
+\hline
+Higher Degree programs are a preferred professional training pathway to becoming a registered psychologist & 25 & 318 & 3.39 & 1.34 & -0.38 & -1.01 & 0.07\\
+\hline
+There is substantial overlap between the competencies gained during training and the competencies required for clinical practice & 26 & 319 & 3.82 & 1.13 & -0.89 & 0.00 & 0.06\\
+\hline
+The pathways to becoming a registered psychologist are unclear & 27 & 318 & 3.03 & 1.34 & -0.02 & -1.29 & 0.07\\
+\hline
+The pathway to becoming a registered psychologist is complicated & 28 & 319 & 4.01 & 1.15 & -1.15 & 0.37 & 0.06\\
+\hline
+There should be multiple pathways to gaining registration as a psychologist & 29 & 319 & 3.85 & 1.28 & -0.86 & -0.47 & 0.07\\
+\hline
+\end{tabular}
+\end{table*}

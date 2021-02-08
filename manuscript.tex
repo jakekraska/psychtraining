@@ -1,0 +1,494 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  english,
+  man]{apa6}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Psychologists' perspectives of their training and pathways to registration},
+  pdfauthor={Simone Gindidis1, Jake Kraska1,2, \& Mehar Mutchall1},
+  pdflang={en-EN},
+  pdfkeywords={area of practice endorsement, aope, mixed methods, australian psychologists},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+% Make \paragraph and \subparagraph free-standing
+\ifx\paragraph\undefined\else
+  \let\oldparagraph\paragraph
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+  \let\oldsubparagraph\subparagraph
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+% Manuscript styling
+\usepackage{upgreek}
+\captionsetup{font=singlespacing,justification=justified}
+
+% Table formatting
+\usepackage{longtable}
+\usepackage{lscape}
+% \usepackage[counterclockwise]{rotating}   % Landscape page setup for large tables
+\usepackage{multirow}		% Table styling
+\usepackage{tabularx}		% Control Column width
+\usepackage[flushleft]{threeparttable}	% Allows for three part tables with a specified notes section
+\usepackage{threeparttablex}            % Lets threeparttable work with longtable
+
+% Create new environments so endfloat can handle them
+% \newenvironment{ltable}
+%   {\begin{landscape}\begin{center}\begin{threeparttable}}
+%   {\end{threeparttable}\end{center}\end{landscape}}
+\newenvironment{lltable}{\begin{landscape}\begin{center}\begin{ThreePartTable}}{\end{ThreePartTable}\end{center}\end{landscape}}
+
+% Enables adjusting longtable caption width to table width
+% Solution found at http://golatex.de/longtable-mit-caption-so-breit-wie-die-tabelle-t15767.html
+\makeatletter
+\newcommand\LastLTentrywidth{1em}
+\newlength\longtablewidth
+\setlength{\longtablewidth}{1in}
+\newcommand{\getlongtablewidth}{\begingroup \ifcsname LT@\roman{LT@tables}\endcsname \global\longtablewidth=0pt \renewcommand{\LT@entry}[2]{\global\advance\longtablewidth by ##2\relax\gdef\LastLTentrywidth{##2}}\@nameuse{LT@\roman{LT@tables}} \fi \endgroup}
+
+% \setlength{\parindent}{0.5in}
+% \setlength{\parskip}{0pt plus 0pt minus 0pt}
+
+% Overwrite redefinition of paragraph and subparagraph by the default LaTeX template
+% See https://github.com/crsh/papaja/issues/292
+\makeatletter
+\renewcommand{\paragraph}{\@startsection{paragraph}{4}{\parindent}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries\itshape\typesectitle}}
+
+\renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{1em}%
+  {0\baselineskip \@plus 0.2ex \@minus 0.2ex}%
+  {-\z@\relax}%
+  {\normalfont\normalsize\itshape\hspace{\parindent}{#1}\textit{\addperi}}{\relax}}
+\makeatother
+
+% \usepackage{etoolbox}
+\makeatletter
+\patchcmd{\HyOrg@maketitle}
+  {\section{\normalfont\normalsize\abstractname}}
+  {\section*{\normalfont\normalsize\abstractname}}
+  {}{\typeout{Failed to patch abstract.}}
+\patchcmd{\HyOrg@maketitle}
+  {\section{\protect\normalfont{\@title}}}
+  {\section*{\protect\normalfont{\@title}}}
+  {}{\typeout{Failed to patch title.}}
+\makeatother
+\shorttitle{Psycholoigsts' training and pathways to registration}
+\keywords{area of practice endorsement, aope, mixed methods, australian psychologists\newline\indent Word count: X}
+\DeclareDelayedFloatFlavor{ThreePartTable}{table}
+\DeclareDelayedFloatFlavor{lltable}{table}
+\DeclareDelayedFloatFlavor*{longtable}{table}
+\makeatletter
+\renewcommand{\efloat@iwrite}[1]{\immediate\expandafter\protected@write\csname efloat@post#1\endcsname{}}
+\makeatother
+\usepackage{lineno}
+
+\linenumbers
+\usepackage{csquotes}
+\ifxetex
+  % Load polyglossia as late as possible: uses bidi with RTL langages (e.g. Hebrew, Arabic)
+  \usepackage{polyglossia}
+  \setmainlanguage[]{english}
+\else
+  \usepackage[shorthands=off,main=english]{babel}
+\fi
+
+\title{Psychologists' perspectives of their training and pathways to registration}
+\author{Simone Gindidis\textsuperscript{1}, Jake Kraska\textsuperscript{1,2}, \& Mehar Mutchall\textsuperscript{1}}
+\date{}
+
+
+\authornote{
+
+1: 29 Ancora Imparo Way, Clayton VIC 3800
+2: 2/270 Ferntree Gully Rd, Notting Hill VIC 3168
+
+The authors made the following contributions. Simone Gindidis: Conceptualization, Writing - Original Draft Preparation, Writing - Review \& Editing, Data Curation, Formal Analysis, Investigation, Methodology, Project Administration, Software, Supervision; Jake Kraska: Conceptualization, Writing - Origianl Draft Preparation, Writing - Review \& Editing, Data Curation, Formal Analysis, Investigation, Methodology, Project Administration, Software, Supervision, Visualization; Mehar Mutchall: Data Curation, Formal Analysis, Investigation, Writing - Review \& Editing.
+
+Correspondence concerning this article should be addressed to Simone Gindidis, 29 Ancora Imparo Way, Clayton VIC 3800. E-mail: \href{mailto:simone.gindidis@monash.edu}{\nolinkurl{simone.gindidis@monash.edu}}
+
+}
+
+\affiliation{\vspace{0.5cm}\textsuperscript{1} Faculty of Education, Monash University\\\textsuperscript{2} Krongold Clinic, Monash University}
+
+\abstract{
+Training and registration of psycholoigsts in Australia has undergone significant change in the last two decades. In particular, the manner in which psychologists obtain an Area of Practice Endorsement, and how this is differentially recognised by governmental bodies has been controversial. Despite ongoing consultation regarding improvements to training, registration and the Area of Practice Endorsement system, there is a paucity of empirical research about psychologists attitudes towards these changes and the ways in which psychologists in Australia are recognised. The current study utilises a mixed methods methodology to quantitatively and qualitatively examine Australian psychologists perceptions of training, Area of Practice Endorsements, and the Medicare Better Access to Mental Health Scheme. One sentence summarizing the main result (with the words ``\textbf{here we show}'' or their equivalent). Two or three sentences explaining what the \textbf{main result} adds to previous knowledge. One or two sentences to put the results into a more \textbf{general context}. Two or three sentences to provide a \textbf{broader perspective}, readily comprehensible to a scientist in any discipline.
+}
+
+
+
+\begin{document}
+\maketitle
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+\hypertarget{participants}{%
+\subsection{Participants}\label{participants}}
+
+There were 340 participants in the quantitative component of this research. There were 290 females, 48 males and 2 participants who did not provide their gender or did not identify with a binary gender. There were 278 participants with General Registration, 1 Non-Practicing Registration and 60 with Provisional Registration. There were 77 participants that identified that they were Psychology Board of Australia approved supervisors. Other descriptive statistics are provided for age (Table \ref{tab:ageParticipants})), Area of Practice Endorsement (Table \ref{tab:aopeParticipants})), training pathway (Table \ref{tab:trainingPathwayParticipants})), years of experience (Table \ref{tab:yearsExperienceParticipants})), work setting (Table \ref{tab:workSettingParticipants})), and client age (Table \ref{tab:clientAgeParticipants})).
+
+\begin{table}
+
+\caption{\label{tab:ageParticipants}Participants by Age}
+\centering
+\begin{tabular}[t]{l|r|r}
+\hline
+Age & n & Percentage\\
+\hline
+18 - 24 & 5 & 1.47\\
+\hline
+25 - 34 & 121 & 35.59\\
+\hline
+35 - 44 & 105 & 30.88\\
+\hline
+45 - 54 & 65 & 19.12\\
+\hline
+55 - 64 & 37 & 10.88\\
+\hline
+65 - 74 & 7 & 2.06\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}
+
+\caption{\label{tab:aopeParticipants}Participants by AoPE}
+\centering
+\begin{tabular}[t]{l|r|r}
+\hline
+Area of Practice Endorsement & n & Percentage\\
+\hline
+Clinical & 25 & 7.35\\
+\hline
+Clinical,Health & 1 & 0.29\\
+\hline
+Clinical,Organisational & 1 & 0.29\\
+\hline
+Community & 1 & 0.29\\
+\hline
+Counselling & 9 & 2.65\\
+\hline
+Ed\&Dev & 24 & 7.06\\
+\hline
+Ed\&Dev,Counselling & 1 & 0.29\\
+\hline
+Forensic & 1 & 0.29\\
+\hline
+Health & 5 & 1.47\\
+\hline
+None & 249 & 73.24\\
+\hline
+Organisational & 4 & 1.18\\
+\hline
+S\&E & 4 & 1.18\\
+\hline
+NA & 15 & 4.41\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}
+
+\caption{\label{tab:trainingPathwayParticipants}Participants by Training Pathway}
+\centering
+\begin{tabular}[t]{l|r|r}
+\hline
+Training Pathway & n & Percentage\\
+\hline
+4+2 & 143 & 42.06\\
+\hline
+5+1 & 35 & 10.29\\
+\hline
+DPsych & 4 & 1.18\\
+\hline
+MPsych & 124 & 36.47\\
+\hline
+MPsych/PhD & 11 & 3.24\\
+\hline
+Ongoing & 22 & 6.47\\
+\hline
+NA & 1 & 0.29\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}
+
+\caption{\label{tab:yearsExperienceParticipants}Participants by Years of Experience}
+\centering
+\begin{tabular}[t]{l|r|r}
+\hline
+Years of Experience & n & Percentage\\
+\hline
+0-7 & 141 & 41.47\\
+\hline
+10-15 & 40 & 11.76\\
+\hline
+15-20 & 34 & 10.00\\
+\hline
+20+ & 41 & 12.06\\
+\hline
+8-10 & 34 & 10.00\\
+\hline
+Provisional & 50 & 14.71\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}
+
+\caption{\label{tab:workSettingParticipants}Participants by Work Setting}
+\centering
+\begin{tabular}[t]{l|r|r}
+\hline
+Work Setting & n & Percentage\\
+\hline
+Education (K-12) & 51 & 12.06\\
+\hline
+Education (Tertiary) & 22 & 5.20\\
+\hline
+Government & 82 & 19.39\\
+\hline
+Non-profit & 53 & 12.53\\
+\hline
+Private & 211 & 49.88\\
+\hline
+NA & 4 & 0.95\\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}
+
+\caption{\label{tab:clientAgeParticipants}Participants by Client Age}
+\centering
+\begin{tabular}[t]{l|r|r}
+\hline
+Client Age & n & Percentage\\
+\hline
+0-3 & 58 & 5.12\\
+\hline
+12-18 & 240 & 21.20\\
+\hline
+18-25 & 259 & 22.88\\
+\hline
+25-65 & 252 & 22.26\\
+\hline
+4-11 & 165 & 14.58\\
+\hline
+65+ & 156 & 13.78\\
+\hline
+NA & 2 & 0.18\\
+\hline
+\end{tabular}
+\end{table}
+
+There were 107 participants that provided their contact details for participation in the qualitative component of this research. While attempting to balance the inclusion of a variety fo psychologists with different training, approved Area of Practice Endorsement and professional experiences, 29 participants were contacted for participation with 15 participants responding and ultimately participating.
+
+\hypertarget{material}{%
+\subsection{Material}\label{material}}
+
+A list of questions used in the online questionnaire (including variable name and question), and an example of the interview schedule are both available in the Appendix.
+
+\hypertarget{procedure}{%
+\subsection{Procedure}\label{procedure}}
+
+For the purpose of our study, we invited participants to complete a series of questions about the Better Access Scheme, perspectives about training to be a psychologist in Australia, and attitudes towards Area of Practice Endorsement in Australia. At the end of this questionnaire, participants were offered the opportunity to provide their contact details to researchers so that they could be contacted to participate in an interview. There was no way to match a participants responses on the questionnaire to their interview data.
+
+Participants that provided their contact details for inclusion in the qualitative component of this research were contacted via email to confirm their inclusion. Once confirmed participants selected a time of their convenience and the interviews were conducted by one of the three authors via \href{https://zoom.us/}{Zoom}. Interviews took approximately 20 to 60 minutes. Stuff about probing questions\ldots{}
+
+\hypertarget{data-analysis}{%
+\subsection{Data analysis}\label{data-analysis}}
+
+We used R (Version 4.0.3; R Core Team, 2020) and the R-packages \emph{dplyr} (Version 1.0.2; Wickham et al., 2020), \emph{ggplot2} (Version 3.3.2; Wickham, 2016), \emph{knitr} (Version 1.30; Xie, 2015), \emph{lattice} (Version 0.20.41; Sarkar, 2008), \emph{nFactors} (Version 2.4.1; Raiche \& Magis, 2020), \emph{papaja} (Version 0.1.0.9997; Aust \& Barth, 2020), \emph{psych} (Version 2.0.12; Revelle, 2020), \emph{stringr} (Version 1.4.0; Wickham, 2019), \emph{tidyr} (Version 1.1.2; Wickham, 2020), and \emph{tinylabels} (Version 0.1.0; Barth, 2020) for all our analyses. Readers can access the R code used to generate this manuscript at \href{https://github.com/jakekraska/psychtraining}{GitHub}.
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+Results for the this study are broken down into three categories of perspectives on (1) Training, (2) AoPE and (3) the Better Access Scheme. As the quantitative study included 59 questions, with nine demographic categories, a total of \texttt{9*59} independent analyses would be required to compare all differences. Rather than blindly analysing differences in response patterns (which would likely result in a high chance of Type I and Type II errors), statistical analyses will focus on those trends identified in previous literature, those items in which high variability is evident (often supported by high standard deviations) or there is a clear pattern of response (often supported by extreme skew or kurtosis values)
+
+Readers can access visualisations of the response patterns on the \href{https://jakekraska.shinyapps.io/psychtraining/}{Shiny App} developed for this research project.
+
+\hypertarget{perspectives-of-training}{%
+\subsection{Perspectives of Training}\label{perspectives-of-training}}
+
+Descriptive statistics for the items relating to perspectives about psychology training are contained in Table \ref{tab:trainingDescriptives}). Across all participants, the most significant variability related to whether participants were considering undertaking an Area of Practice Endorsement bridging program (m = 3.01, SD = 1.53). There was a strong agreement across participants that existing training prepares psychologists appropriately for ethical challenges (m = 3.52, SD = 1.25), but there was more variability concerning preparation for legal matters (m = 3.98, SD = 1.06).
+
+\begin{table}
+
+\caption{\label{tab:trainingDescriptives}Descriptive Statistics for Training Questions}
+\centering
+\begin{tabular}[t]{l|r|r|r|r|r|r|r}
+\hline
+  & Question & n & m & SD & Skew & Kurtosis & SE\\
+\hline
+Choosing a particular registration pathway was an easy decision for me & 1 & 319 & 3.41 & 1.34 & -0.40 & -1.15 & 0.08\\
+\hline
+It was easy to find a course relating to my area of practice interest & 2 & 319 & 2.99 & 1.43 & -0.03 & -1.41 & 0.08\\
+\hline
+Given the chance, I would have opted for another registration pathway & 3 & 316 & 3.04 & 1.47 & -0.09 & -1.45 & 0.08\\
+\hline
+I am considering undertaking an Area of Practice Endorsement bridging program course & 4 & 320 & 3.01 & 1.53 & -0.11 & -1.49 & 0.09\\
+\hline
+The length of my training has adequately prepared me for efficient practice & 5 & 319 & 3.97 & 1.18 & -1.00 & -0.07 & 0.07\\
+\hline
+I was provided with enough practical experience during my training & 6 & 320 & 3.89 & 1.33 & -0.96 & -0.41 & 0.07\\
+\hline
+I was provided with enough clinical supervision during my training & 7 & 319 & 4.11 & 1.23 & -1.31 & 0.50 & 0.07\\
+\hline
+My training equipped me with adequate knowledge of the discipline & 8 & 319 & 4.18 & 1.01 & -1.42 & 1.49 & 0.06\\
+\hline
+My training equipped me with adequate knowledge about ethical conduct & 9 & 317 & 4.54 & 0.76 & -2.31 & 6.64 & 0.04\\
+\hline
+My training equipped me with adequate knowledge about legal matters & 10 & 319 & 3.52 & 1.25 & -0.44 & -1.02 & 0.07\\
+\hline
+My training equipped me with adequate knowledge about professional matters & 11 & 318 & 3.98 & 1.06 & -0.98 & 0.31 & 0.06\\
+\hline
+My training adequately prepared me to conduct psychological assessments & 12 & 318 & 4.29 & 0.98 & -1.60 & 2.14 & 0.05\\
+\hline
+My training adequately prepared me to understand psychological assessment and measurement & 13 & 316 & 4.40 & 0.84 & -1.68 & 2.98 & 0.05\\
+\hline
+My training adequately prepared me to implement intervention strategies & 14 & 318 & 3.89 & 1.20 & -0.98 & -0.12 & 0.07\\
+\hline
+Because of my training I am confident conducting research & 15 & 315 & 3.79 & 1.09 & -0.65 & -0.47 & 0.06\\
+\hline
+Because of my training I am confident working with people from diverse groups and cultures & 16 & 318 & 3.97 & 1.06 & -0.93 & 0.13 & 0.06\\
+\hline
+My training prepared me to confidently work with clients of all ages & 17 & 318 & 3.56 & 1.26 & -0.51 & -0.96 & 0.07\\
+\hline
+My training helped refine my communication skills & 18 & 317 & 4.36 & 0.80 & -1.57 & 3.11 & 0.04\\
+\hline
+I am satisfied with the extent my training pathway prepared me for practice & 19 & 319 & 3.94 & 1.20 & -1.02 & -0.03 & 0.07\\
+\hline
+The 4+2 internship is a satisfactory professional training pathway to becoming a psychologist & 20 & 319 & 3.57 & 1.39 & -0.47 & -1.17 & 0.08\\
+\hline
+The 4+2 internship is a preferred professional training pathway to becoming a registered psychologist & 21 & 319 & 2.75 & 1.46 & 0.23 & -1.30 & 0.08\\
+\hline
+The 5+1 internship is a satisfactory professional training pathway to becoming a registered psychologist & 22 & 317 & 3.71 & 1.08 & -0.64 & -0.20 & 0.06\\
+\hline
+The 5+1 internship is a preferred professional training pathway to becoming a registered psychologist & 23 & 318 & 3.01 & 1.16 & -0.07 & -0.74 & 0.06\\
+\hline
+Higher Degree programs are a satisfactory professional training pathway to becoming a registered psychologist & 24 & 318 & 3.92 & 1.15 & -0.96 & 0.02 & 0.06\\
+\hline
+Higher Degree programs are a preferred professional training pathway to becoming a registered psychologist & 25 & 318 & 3.39 & 1.34 & -0.38 & -1.01 & 0.07\\
+\hline
+There is substantial overlap between the competencies gained during training and the competencies required for clinical practice & 26 & 319 & 3.82 & 1.13 & -0.89 & 0.00 & 0.06\\
+\hline
+The pathways to becoming a registered psychologist are unclear & 27 & 318 & 3.03 & 1.34 & -0.02 & -1.29 & 0.07\\
+\hline
+The pathway to becoming a registered psychologist is complicated & 28 & 319 & 4.01 & 1.15 & -1.15 & 0.37 & 0.06\\
+\hline
+There should be multiple pathways to gaining registration as a psychologist & 29 & 319 & 3.85 & 1.28 & -0.86 & -0.47 & 0.07\\
+\hline
+\end{tabular}
+\end{table}
+
+\hypertarget{perspectives-of-aope}{%
+\subsection{Perspectives of AoPE}\label{perspectives-of-aope}}
+
+\hypertarget{perspectives-of-the-better-access-scheme}{%
+\subsection{Perspectives of the Better Access Scheme}\label{perspectives-of-the-better-access-scheme}}
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+\newpage
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\begingroup
+\setlength{\parindent}{-0.5in}
+\setlength{\leftskip}{0.5in}
+
+\hypertarget{refs}{}
+\leavevmode\hypertarget{ref-R-papaja}{}%
+Aust, F., \& Barth, M. (2020). \emph{papaja: Prepare reproducible APA journal articles with R Markdown}. Retrieved from \url{https://github.com/crsh/papaja}
+
+\leavevmode\hypertarget{ref-R-tinylabels}{}%
+Barth, M. (2020). \emph{Tinylabels: Lightweight variable labels}. Retrieved from \url{https://CRAN.R-project.org/package=tinylabels}
+
+\leavevmode\hypertarget{ref-R-nFactors}{}%
+Raiche, G., \& Magis, D. (2020). \emph{NFactors: Parallel analysis and other non graphical solutions to the cattell scree test}. Retrieved from \url{https://CRAN.R-project.org/package=nFactors}
+
+\leavevmode\hypertarget{ref-R-base}{}%
+R Core Team. (2020). \emph{R: A language and environment for statistical computing}. Vienna, Austria: R Foundation for Statistical Computing. Retrieved from \url{https://www.R-project.org/}
+
+\leavevmode\hypertarget{ref-R-psych}{}%
+Revelle, W. (2020). \emph{Psych: Procedures for psychological, psychometric, and personality research}. Evanston, Illinois: Northwestern University. Retrieved from \url{https://CRAN.R-project.org/package=psych}
+
+\leavevmode\hypertarget{ref-R-lattice}{}%
+Sarkar, D. (2008). \emph{Lattice: Multivariate data visualization with r}. New York: Springer. Retrieved from \url{http://lmdvr.r-forge.r-project.org}
+
+\leavevmode\hypertarget{ref-R-ggplot2}{}%
+Wickham, H. (2016). \emph{Ggplot2: Elegant graphics for data analysis}. Springer-Verlag New York. Retrieved from \url{https://ggplot2.tidyverse.org}
+
+\leavevmode\hypertarget{ref-R-stringr}{}%
+Wickham, H. (2019). \emph{Stringr: Simple, consistent wrappers for common string operations}. Retrieved from \url{https://CRAN.R-project.org/package=stringr}
+
+\leavevmode\hypertarget{ref-R-tidyr}{}%
+Wickham, H. (2020). \emph{Tidyr: Tidy messy data}. Retrieved from \url{https://CRAN.R-project.org/package=tidyr}
+
+\leavevmode\hypertarget{ref-R-dplyr}{}%
+Wickham, H., François, R., Henry, L., \& Müller, K. (2020). \emph{Dplyr: A grammar of data manipulation}. Retrieved from \url{https://CRAN.R-project.org/package=dplyr}
+
+\leavevmode\hypertarget{ref-R-knitr}{}%
+Xie, Y. (2015). \emph{Dynamic documents with R and knitr} (2nd ed.). Boca Raton, Florida: Chapman; Hall/CRC. Retrieved from \url{https://yihui.org/knitr/}
+
+\endgroup
+
+
+\end{document}

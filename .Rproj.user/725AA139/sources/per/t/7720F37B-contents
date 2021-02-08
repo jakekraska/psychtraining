@@ -1,0 +1,2 @@
+kable(data.frame("Variable" = unname(questions), "Question" = names(questions))
+caption = "Appendix A: List of Survey Questions")
