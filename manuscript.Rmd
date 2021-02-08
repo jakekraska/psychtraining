@@ -91,7 +91,7 @@ set.seed(42)
 knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
 
-Psychologists' pathways to registration has gone through several changes in the past two decades (). More recently there has been an increasing focus on Area of Practice Endorsements (AoPE) and how these relate to the Medicare Better Access to Mental Health Scheme (BAMHS). Despite frequent criticism in news and social media of what is perceived as a "two tiered" compensation system that has been enforced by Medicare and creates misconceptions within the public about the skill sets of psychologists, there is no empirical evidence regarding psychologists' attitudes and perspectives of the efficacy and appropriateness of their training, the AoPE system and the BAMHS. 
+Psychologists' pathways to registration has gone through several changes in the past two decades (). More recently there has been an increasing focus on Area of Practice Endorsements (AoPE) and how these relate to the Medicare Better Access to Mental Health Scheme (BAMHS). Despite frequent criticism in news and social media of what is perceived as a "two tiered" compensation system that has been enforced by Medicare and creates misconceptions within the public about the skill sets of psychologists, there is no empirical evidence regarding psychologists' attitudes and perspectives of the efficacy and appropriateness of their training, the AoPE system and the BAMHS.
 
 As important stakeholders in the treatment of mental health problems in Australia, psychologists are in a unique position to provide input about training, recognition of different skillsets (such as detailed in the AoPE system) and the structure of schemes designed to assist the public accessing mental health support. In order to support conceptualisation of appropriate training programs and funding schemes there needs to be empirical evidence about the effectiveness of different professions or training programs in addressing mental health problems; there is a paucity of such research, and even less research on the perspectives of psychologists. Gaining insights into psychologists perspectives of these matters would assist with development of targeted research in these domains, as well as begins to provide an empirical basis for which governmental bodies and peak professional bodies can support changes and innovation.
 
@@ -101,7 +101,7 @@ Identify the deficiencies in the literature and what knowledge is needed
 
 Identify audiences that will benefit from addressing this gap
 
-The opinions of peak bodies, governmental reports and the available literature demonstrate the diversity of the psychology profession in Australia. Relying purely on qualitative methods do not provide opportunity for input from the wider profession. On the other hand, relying purely on quantitative measures is inadequate to fully describe the nuanced opinions of psychologists. Therefore the aim of this study was to obtain a large sample of psychologists opinions and perspectives via a quantitative survey, while gaining further insight into opinions via qualitative interviews. 
+The opinions of peak bodies, governmental reports and the available literature demonstrate the diversity of the psychology profession in Australia. Relying purely on qualitative methods do not provide opportunity for input from the wider profession. On the other hand, relying purely on quantitative measures is inadequate to fully describe the nuanced opinions of psychologists. Therefore the aim of this study was to obtain a large sample of psychologists opinions and perspectives via a quantitative survey, while gaining further insight into opinions via qualitative interviews.
 
 ```{r load-data}
 
@@ -177,7 +177,7 @@ trainingQuestions <- setNames(trainingQuestions$item, trainingQuestions$question
 
 ## Participants
 
-Our online questionnaire was completed by `r nrow(data)` participants. In order to account for small _n_ in certain demographics, groups were collapsed. For example Area of Practice Endorsement was collapsed into those that do and do not possess an AoPE, and all of those with a DPsych, MPsych, or MPsych/PhD were collapsed into "Higher Degree". Further breakdown of demographics is available on our [Shiny App (https://jakekraska.shinyapps.io/psychtraining/)](https://jakekraska.shinyapps.io/psychtraining/).
+Our online questionnaire was completed by `r nrow(data)` participants. In order to account for small *n* in certain demographics, groups were collapsed. For example Area of Practice Endorsement was collapsed into those that do and do not possess an AoPE, and all of those with a DPsych, MPsych, or MPsych/PhD were collapsed into "Higher Degree". Further breakdown of demographics is available on our [Shiny App (https://jakekraska.shinyapps.io/psychtraining/)](https://jakekraska.shinyapps.io/psychtraining/).
 
 ```{r collapseGroups}
 
@@ -203,7 +203,7 @@ There were `r nrow(filter(data, gender == "Female"))` females, `r nrow(filter(da
 
 Other descriptive statistics are provided for age (Table \@ref(tab:ageParticipants)), Area of Practice Endorsement (AoPE) (Table \@ref(tab:aopeParticipants)), training pathway (Table \@ref(tab:trainingPathwayParticipants)), years of experience (Table \@ref(tab:yearsExperienceParticipants)), work setting (Table \@ref(tab:workSettingParticipants)), and client age (Table \@ref(tab:clientAgeParticipants)). (Simone - I would much prefer to point readers towards the Demographics tab of the online platform and remove all these tables)
 
-There were 108 participants that provided their contact details for participation in the qualitative component of this research. While attempting to balance the inclusion of a variety fo psychologists with different training, approved AoPE and professional experiences, 29 participants were contacted for participation with 15 participants responding and ultimately participating. 
+There were 108 participants that provided their contact details for participation in the qualitative component of this research. While attempting to balance the inclusion of a variety fo psychologists with different training, approved AoPE and professional experiences, 29 participants were contacted for participation with 15 participants responding and ultimately participating.
 
 ```{r ageParticipants}
 
@@ -268,7 +268,6 @@ data %>%
 
 ```
 
-
 ## Material
 
 A list of questions used in the online questionnaire (including variable name and question), and an example of the interview schedule are both available in the Appendix.
@@ -289,8 +288,7 @@ Qualitative and quantitative data collection was carried out for approximately 6
 
 We used `r cite_r("r-references.bib")` for all our quantitative analyses. X, Y and Z were used for our qualtiative analyses.
 
-Readers can access the R code used to generate this manuscript at [GitHub](https://github.com/jakekraska/psychtraining). 
-
+Readers can access the R code used to generate this manuscript at [GitHub](https://github.com/jakekraska/psychtraining).
 
 # Results
 
@@ -300,9 +298,9 @@ Readers can access visualisations of the response patterns as well as tables of 
 
 ## Perspectives on Psychology Training
 
-Questions focused on perspectives of training related to satisfaction with participants own training, whether the training equipped participants with sufficient knowledge and prepared them for practice as a psychologist, perspectives on satisfactory and preferred training pathways, and clarity surrounding pathways to registration and competencies. 
+Questions focused on perspectives of training related to satisfaction with participants own training, whether the training equipped participants with sufficient knowledge and prepared them for practice as a psychologist, perspectives on satisfactory and preferred training pathways, and clarity surrounding pathways to registration and competencies.
 
-Using Principal Components Analysis, analysis of a scree plot (Figure \@ref(fig:training-scree)) and factor loadings (Table \@ref(tab:training-loadings)) suggested that the responses to questions  focused in on three domains that we have labelled "Pathways to Registration" (Items 20-25 and Item 29), "Adequacy of Training" (Items 5-19 and Item 26), and "Clarity of Pathways" (Items 1-4 and Items 27-28).
+Using Principal Components Analysis, analysis of a scree plot (Figure \@ref(fig:training-scree)) and factor loadings (Table \@ref(tab:training-loadings)) suggested that the responses to questions focused in on three domains that we have labelled "Pathways to Registration" (Items 20-25 and Item 29), "Adequacy of Training" (Items 5-19 and Item 26), and "Clarity of Pathways" (Items 1-4 and Items 27-28).
 
 ```{r training-scree, fig.cap = "Screeplot of the first 10 components"}
 
@@ -330,31 +328,13 @@ options(knitr.kable.NA = NA)
 
 ### Pathways to Registration
 
-Descriptive statistics for the items related to perspectives on pathways to registration are contained in Table \@ref(tab:reg-pathways-descriptives).
-
-```{r reg-pathways-descriptives}
-
-data %>%
-  select(all_of(trainingQuestions[c(20:25,29)])) %>%
-  describe(ranges = FALSE) %>%
-  select(-vars) %>%
-  rename("_n_" = "n",
-         "_m_" = "mean",
-         "_SD_" = "sd",
-         "Skew" = "skew",
-         "Kurtosis" = "kurtosis",
-         "_SE_" = "se") %>%
-  kable(caption = "Pathways to registration items descriptive statistics", digits = 2)
-
-```
-
 ```{r trainingPerspectivesAoPE}
 
 higher.degree.t <- apa_print(t.test(trainingPathway_24 ~ aope.collapse, data = data))
 
 ```
 
-There was noticeable variation in the "satisfactory" and "preferred" pathways for registration as a general psychologist. At face value the perspectives of psychologists were that the Higher Degree programs were the most satisfactory (_m_ = `r mean(data$trainingPathway_24, na.rm = TRUE)`, _SD_ = `r sd(data$trainingPathway_24, na.rm = TRUE)`) and that the 4+2 internship was not preferred (_m_ = `r mean(data$trainingPathway_21, na.rm = TRUE)`, _SD_ = `r sd(data$trainingPathway_21, na.rm = TRUE)`). Despite not being preferred, the perspective about whether the 4+2 internship was satisfactory was somewhat neutral (_m_ = `r mean(data$trainingPathway_20, na.rm = TRUE)`, _SD_ = `r sd(data$trainingPathway_20, na.rm = TRUE)`). Obviously perspectives would be influenced by participants own training and registration status. Those with AoPE are more positive about the higher degree pathway than those without, `r higher.degree.t$full_result`. This is likely related to the training pathways that those with and without AoPE have taken, as displayed in Figure \@ref(fig:hd-satisfactory-fig). The opposite is found when considering perspectives about the 4+2 internship pathway, as displayed in Figure \@ref(fig:42-satisfactory-fig).
+There was noticeable variation in the "satisfactory" and "preferred" pathways for registration as a general psychologist. At face value the perspectives of psychologists were that the Higher Degree programs were the most satisfactory (*m* = `r mean(data$trainingPathway_24, na.rm = TRUE)`, *SD* = `r sd(data$trainingPathway_24, na.rm = TRUE)`) and that the 4+2 internship was not preferred (*m* = `r mean(data$trainingPathway_21, na.rm = TRUE)`, *SD* = `r sd(data$trainingPathway_21, na.rm = TRUE)`). Despite not being preferred, the perspective about whether the 4+2 internship was satisfactory was somewhat neutral (*m* = `r mean(data$trainingPathway_20, na.rm = TRUE)`, *SD* = `r sd(data$trainingPathway_20, na.rm = TRUE)`). Obviously perspectives would be influenced by participants own training and registration status. Those with AoPE are more positive about the higher degree pathway than those without, `r higher.degree.t$full_result`. This is likely related to the training pathways that those with and without AoPE have taken, as displayed in Figure \@ref(fig:hd-satisfactory-fig). The opposite is found when considering perspectives about the 4+2 internship pathway, as displayed in Figure \@ref(fig:42-satisfactory-fig).
 
 ```{r hd-satisfactory-fig, fig.cap = "Higher degree programs are a satisfactory pathway by participant training"}
 
@@ -384,25 +364,7 @@ ggplot(filter(data, !is.na(trainingPathway_20), !is.na(trainingPathway.collapse)
 
 ### Adequacy of Training
 
-Descriptive statistics for the items related to adequacy of training are contained in Table \@ref(tab:training-adequacy-descriptives).
-
-```{r training-adequacy-descriptives}
-
-data %>%
-  select(all_of(trainingQuestions[c(5:19,26)])) %>%
-  describe(ranges = FALSE) %>%
-  select(-vars) %>%
-  rename("_n_" = "n",
-         "_m_" = "mean",
-         "_SD_" = "sd",
-         "Skew" = "skew",
-         "Kurtosis" = "kurtosis",
-         "_SE_" = "se") %>%
-  kable(caption = "Adequacy of training items descriptive statistics", digits = 2)
-
-```
-
-There was a strong agreement across participants that existing training prepares psychologists appropriately for ethical challenges (_m_ = `r mean(data$trainingPathway_9, na.rm = TRUE)`, _SD_ = `r sd(data$trainingPathway_9, na.rm = TRUE)`), but there was more variability concerning preparation for legal matters (_m_ = `r mean(data$trainingPathway_10, na.rm = TRUE)`, _SD_ = `r sd(data$trainingPathway_10, na.rm = TRUE)`). Those that trained via the 4+2 pathway appeared more confident in intervention strategies (Figure \@ref(fig:intervention-fig)) but of equal confidence in assessment and measurement (Figure \@ref(fig:assessment-fig)). Overall, it appears most participants feel that their training adequately prepared them, with a mean total score across these 15 items of `r round(mean(rowSums(data[,trainingQuestions[c(5:19,26)]], na.rm = TRUE), na.rm = TRUE), 2)` out of `r 15*5`.
+There was a strong agreement across participants that existing training prepares psychologists appropriately for ethical challenges (*m* = `r mean(data$trainingPathway_9, na.rm = TRUE)`, *SD* = `r sd(data$trainingPathway_9, na.rm = TRUE)`), but there was more variability concerning preparation for legal matters (*m* = `r mean(data$trainingPathway_10, na.rm = TRUE)`, *SD* = `r sd(data$trainingPathway_10, na.rm = TRUE)`). Those that trained via the 4+2 pathway appeared more confident in intervention strategies (Figure \@ref(fig:intervention-fig)) but of equal confidence in assessment and measurement (Figure \@ref(fig:assessment-fig)). Overall, it appears most participants feel that their training adequately prepared them, with a mean total score across these 15 items of `r round(mean(rowSums(data[,trainingQuestions[c(5:19,26)]], na.rm = TRUE), na.rm = TRUE), 2)` out of `r 15*5`.
 
 ```{r intervention-fig, fig.cap = "Training adequately prepared me to implement intervention strategies"}
 
@@ -432,27 +394,9 @@ ggplot(filter(data, !is.na(trainingPathway_13), !is.na(trainingPathway.collapse)
 
 ### Clarity of Pathways
 
-Descriptive statistics for the items relating to clarity of pathways are contained in Table \@ref(tab:clarity-descriptives).
+Across all participants, the most significant variability related to whether participants were considering undertaking an Area of Practice Endorsement bridging program (*m* = `r mean(data$trainingPathway_4, na.rm = TRUE)`, *SD* = `r sd(data$trainingPathway_4, na.rm = TRUE)`). Most psychologists appeared to agree that the pathways to become a psychologist are complicated, (*m* = `r mean(data$trainingPathway_28, na.rm = TRUE)`, *SD* = `r sd(data$trainingPathway_28, na.rm = TRUE)`).
 
-```{r clarity-descriptives}
-
-data %>%
-  select(all_of(trainingQuestions[c(1:4,27:28)])) %>%
-  describe(ranges = FALSE) %>%
-  select(-vars) %>%
-  rename("_n_" = "n",
-         "_m_" = "mean",
-         "_SD_" = "sd",
-         "Skew" = "skew",
-         "Kurtosis" = "kurtosis",
-         "_SE_" = "se") %>%
-  kable(caption = "Clarity of pathways items descriptive statistics", digits = 2)
-
-```
-
-Across all participants, the most significant variability related to whether participants were considering undertaking an Area of Practice Endorsement bridging program (_m_ = `r mean(data$trainingPathway_4, na.rm = TRUE)`, _SD_ = `r sd(data$trainingPathway_4, na.rm = TRUE)`). Most psychologists appeared to agree that the pathways to become a psychologist are complicated, (_m_ = `r mean(data$trainingPathway_28, na.rm = TRUE)`, _SD_ = `r sd(data$trainingPathway_28, na.rm = TRUE)`).
-
-When it came to choosing a pathway, those that had completed the 5+1 internship pathway seemed to be the most uncertain (Figure \@ref(fig:decision-fig)) but only those that had completed a higher degree training pathway appeared more positive about ease of finding a preferred course (Figure \@ref(fig:course-selection-fig)). This is reflected in a low agreement about opting for a different registration pathway (Figure \@ref(fig:different-pathway-fig1)), and Clinical Psychologists appearing to be the least likely to have chosen a different pathway (Figure \@ref(fig:different-pathway-fig2)). 
+When it came to choosing a pathway, those that had completed the 5+1 internship pathway seemed to be the most uncertain (Figure \@ref(fig:decision-fig)) but only those that had completed a higher degree training pathway appeared more positive about ease of finding a preferred course (Figure \@ref(fig:course-selection-fig)). This is reflected in a low agreement about opting for a different registration pathway (Figure \@ref(fig:different-pathway-fig1)), and Clinical Psychologists appearing to be the least likely to have chosen a different pathway (Figure \@ref(fig:different-pathway-fig2)).
 
 ```{r decision-fig, fig.cap = "Choosing a particular registration pathway was an easy decision for me"}
 
@@ -520,19 +464,20 @@ ggplot(filter(data, !is.na(trainingPathway_3), !is.na(aope.other)),
 
 # Discussion
 
-
 \newpage
 
 # References
 
+```{=tex}
 \begingroup
 \setlength{\parindent}{-0.5in}
 \setlength{\leftskip}{0.5in}
+```
+::: {#refs custom-style="Bibliography"}
+:::
 
-<div id="refs" custom-style="Bibliography"></div>
 \endgroup
 
 ```{r echo = FALSE, results = 'asis', cache = FALSE}
 #papaja::render_appendix('appendix.rmd')
 ```
-
